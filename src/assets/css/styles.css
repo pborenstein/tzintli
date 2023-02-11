@@ -252,7 +252,7 @@ div.qembed cite {
   "xs14";   /*  ss14:   tail l */
 
   margin-top: 1em;
-  color: var(--color-heading);
+  color: var(--color-foreground);
   font-size: var(--s-2);
 
   /* border-top: 1px solid var(--color-border) ;

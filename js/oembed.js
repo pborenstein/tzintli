@@ -51,7 +51,7 @@ async function twitterHandler (url, params) {
                 maxwidth: 320,
                 ...params
     }
-    
+
     try {
       let oembed_data = await extract(url, params)
       return oembed_data.html
@@ -88,7 +88,7 @@ async function microlink(urlp) {
   let metadata = null
 
 try {
-     metadata = await Cache(`https://api.microlink.io/?url=${urlp}`, 
+     metadata = await Cache(`https://api.microlink.io/?url=${urlp}`,
         { duration: "1m", type: "json"})
 } catch (error) {
   return `
@@ -118,7 +118,7 @@ try {
   }
 
   let ret = `
-<div class="tepiton qembed rounded-border">
+<div class="tepiton qembed">
   <header><a href="${url}">${title}</a></header>
   <section class="with-sidebar" style="--space: 0">
     <div class="qimg"><img src="${image.url}"></div>
