@@ -47,7 +47,7 @@
   --font-sans-serif:          neue-kabel, 'Poiret One',Vibes, 'Abril Fatface','Onyx','Helvetica Neue', Helvetica, sans-serif;
   --font-mono:                monospace;
   --font-logo:                'Helvetica Neue', Spectral, john-doe, sans-serif;
-  --font-body:                var(--font-serif);
+  --font-body:                var(--font-sans-serif);
   --font-heading:             var(--font-sans-serif);
 }
 
@@ -70,9 +70,9 @@
 
   --font-serif:               Spectral, Georgia, serif;
   --font-sans-serif:          neue-kabel, 'Poiret One',Vibes, 'Abril Fatface','Onyx','Helvetica Neue', Helvetica, sans-serif;
-  --font-mono:                monospace;
+  --font-mono:                'Space Mono', monospace;
   --font-logo:                'Helvetica Neue', Spectral, john-doe, sans-serif;
-  --font-body:                var(--font-serif);
+  --font-body:                var(--font-mono);
   --font-heading:             var(--font-sans-serif);
 
   --tepiton-head-factor:      var(--s-1)
@@ -113,7 +113,7 @@ article {
 
 html {
   /* https://css-tricks.com/simplified-fluid-typography/ */
-  font-size: clamp(12px, .7rem + 1vw, 24px);
+  font-size: clamp(12px, .4rem + 1vw, 24px);
 }
 
 body {
@@ -223,7 +223,7 @@ ul li + li
 
 .tepiton article.noTitle,
  div.qembed {
-  font-family: neue-kabel, 'Poiret One',Vibes, 'Abril Fatface','Onyx','Helvetica Neue', Helvetica, sans-serif;
+  font-family: var(--font-body);
 }
 
 div.qembed {
