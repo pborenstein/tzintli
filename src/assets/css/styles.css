@@ -44,9 +44,9 @@
   --weight-body:              var(--dk-weight-body      , var(--lt-weight-body));
 
   --font-serif:               Spectral, Georgia, serif;
-  --font-sans-serif:          neue-kabel, 'Poiret One',Vibes, 'Abril Fatface','Onyx','Helvetica Neue', Helvetica, sans-serif;
+  --font-sans-serif:          BerkeleyMono, neue-kabel, 'Poiret One',Vibes, 'Abril Fatface','Onyx','Helvetica Neue', Helvetica, sans-serif;
   --font-mono:                BerkeleyMono, monospace;
-  --font-logo:                'Helvetica Neue', Spectral, john-doe, sans-serif;
+  --font-logo:                BerkeleyMono, 'Helvetica Neue', Spectral, john-doe, sans-serif;
   --font-body:                var(--font-sans-serif);
   --font-heading:             var(--font-sans-serif);
 }
@@ -66,12 +66,12 @@
   --s5:   calc(var(--s4)  *   var(--ratio));  /*  3.05  */
 
   --space:    var(--s2);
-  --measure:  min(90%, 64ch);
+  --measure:  min(90%, 52ch);
 
   --font-serif:               Spectral, Georgia, serif;
-  --font-sans-serif:          neue-kabel, 'Poiret One',Vibes, 'Abril Fatface','Onyx','Helvetica Neue', Helvetica, sans-serif;
+  --font-sans-serif:          BerkeleyMono, neue-kabel, 'Poiret One',Vibes, 'Abril Fatface','Onyx','Helvetica Neue', Helvetica, sans-serif;
   --font-mono:                BerkeleyMono, palatino;
-  --font-logo:                'Helvetica Neue', Spectral, john-doe, sans-serif;
+  --font-logo:                var(--font-mono),'Helvetica Neue', Spectral, john-doe, sans-serif;
   --font-body:                var(--font-mono);
   --font-heading:             var(--font-mono);
 
@@ -168,7 +168,7 @@ main {
  ***/
 
 footer {
-  font-family:      var(--font-sans-serif);
+  font-family:      var(--font-heading);
   font-size:        var(--s-2);
   line-height:      1.5;
   display:          flex;
