@@ -45,7 +45,7 @@
 
   --font-serif:               Spectral, Georgia, serif;
   --font-sans-serif:          neue-kabel, 'Poiret One',Vibes, 'Abril Fatface','Onyx','Helvetica Neue', Helvetica, sans-serif;
-  --font-mono:                monospace;
+  --font-mono:                BerkeleyMono, monospace;
   --font-logo:                'Helvetica Neue', Spectral, john-doe, sans-serif;
   --font-body:                var(--font-sans-serif);
   --font-heading:             var(--font-sans-serif);
@@ -70,10 +70,10 @@
 
   --font-serif:               Spectral, Georgia, serif;
   --font-sans-serif:          neue-kabel, 'Poiret One',Vibes, 'Abril Fatface','Onyx','Helvetica Neue', Helvetica, sans-serif;
-  --font-mono:                'Space Mono', monospace;
+  --font-mono:                BerkeleyMono, palatino;
   --font-logo:                'Helvetica Neue', Spectral, john-doe, sans-serif;
   --font-body:                var(--font-mono);
-  --font-heading:             var(--font-sans-serif);
+  --font-heading:             var(--font-mono);
 
   --tepiton-head-factor:      var(--s-1)
 }
@@ -82,6 +82,24 @@ pre {
   overflow: scroll;
   line-height: 1.0;
 }
+
+@font-face {
+  font-family: "BerkeleyMono";
+  src: 
+  url('../fonts/BerkeleyMono-Regular.woff') format('woff'),
+  url('../fonts/BerkeleyMono-Regular.woff2') format('woff2'),
+  url('../fonts/BerkeleyMono-Italic.woff') format('woff'),
+  url('../fonts/BerkeleyMono-Italic.woff2') format('woff2'),
+  url('../fonts/BerkeleyMono-Bold.woff') format('woff'),
+  url('../fonts/BerkeleyMono-Bold.woff2') format('woff2'),
+  url('../fonts/BerkeleyMono-BoldItalic.woff') format('woff'),
+  url('../fonts/BerkeleyMono-BoldItalic.woff2') format('woff2')
+;}
+
+body {url
+  ...
+}
+...
 
 code  {
   font-size: var(--s-1);
