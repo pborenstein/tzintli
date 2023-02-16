@@ -86,20 +86,17 @@ pre {
 @font-face {
   font-family: "BerkeleyMono";
   src: 
-  url('../fonts/BerkeleyMono-Regular.woff') format('woff'),
-  url('../fonts/BerkeleyMono-Regular.woff2') format('woff2'),
-  url('../fonts/BerkeleyMono-Italic.woff') format('woff'),
-  url('../fonts/BerkeleyMono-Italic.woff2') format('woff2'),
-  url('../fonts/BerkeleyMono-Bold.woff') format('woff'),
-  url('../fonts/BerkeleyMono-Bold.woff2') format('woff2'),
-  url('../fonts/BerkeleyMono-BoldItalic.woff') format('woff'),
-  url('../fonts/BerkeleyMono-BoldItalic.woff2') format('woff2')
-;}
-
-body {url
-  ...
+  url('../fonts/BerkeleyMono-Regular.woff2')    format('woff2'),
+  url('../fonts/BerkeleyMono-Italic.woff2')     format('woff2'),
+  url('../fonts/BerkeleyMono-Bold.woff2')       format('woff2'),
+  url('../fonts/BerkeleyMono-BoldItalic.woff2') format('woff2'),
+  url('../fonts/BerkeleyMono-Regular.woff')     format('woff'),
+  url('../fonts/BerkeleyMono-Italic.woff')      format('woff'),
+  url('../fonts/BerkeleyMono-Bold.woff')        format('woff'),
+  url('../fonts/BerkeleyMono-BoldItalic.woff') format('woff');
+  font-style: normal;
 }
-...
+
 
 code  {
   font-size: var(--s-1);
