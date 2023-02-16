@@ -26,7 +26,7 @@
 
   --dk-color-link:            var(--is-dark)  tomato;
   --dk-color-link-hover:      var(--is-dark)  hsl(11,53%, 62%);
-  --dk-color-foreground:      var(--is-dark)  hsl(  0,  0%, 90%, 0.8);
+  --dk-color-foreground:      var(--is-dark)  #00fb2af6;
   --dk-color-background:      var(--is-dark)  #0e1116;
   --dk-color-heading:         var(--is-dark)  hsl(  9,100%, 64%);
   --dk-color-logo:            var(--is-dark)  var(--color-heading);
