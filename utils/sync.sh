@@ -7,11 +7,11 @@
 source="."
 dest="$1"
 
-if [[ ! -e $dest/.eleventy.js ]] ; then
-  echo "missing .eleventy.js"
-  echo "start with a clone of the repo"
-  exit
-fi
+# if [[ ! -e $dest/.eleventy.js ]] ; then
+#   echo "missing .eleventy.js"
+#   echo "start with a clone of the repo"
+#   exit
+# fi
 
 echo Synching from $source to $dest
 echo
