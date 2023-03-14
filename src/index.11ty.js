@@ -6,7 +6,12 @@ module.exports = class Home {
     return {
       layout: "base.njk",
       home: true,
-      excerpt: "all the little things",    }
+      excerpt: "all the little things",
+      eleventyNavigation: {
+        key: "home",
+        order: 1
+      }
+    }
   }
 
   async renderPost(post) {
@@ -14,11 +19,7 @@ module.exports = class Home {
     let noTitle = false
     let header
 
-    try {
-      excerpt = await this.renderTemplate(excerpt, 'md,njk')   
-    } catch (error) {
-      excerpt = 'so annoying'
-    }
+    excerpt = await this.renderTemplate(excerpt, 'md,njk')
 
     if (post.data.newlines) {
       excerpt = excerpt.trim().replace(/\n/g, '<br>\n')
@@ -40,7 +41,8 @@ module.exports = class Home {
     </section>`
     let footer  = `
     <footer>
-      <a href="${post.data.draft}"># ${post.date.toDateString()}</a>
+    <span>&nbsp;</span>
+    <a href="${post.url}">${post.date.toDateString().replace(' 0', ' ')}</a>
     </footer>`
 
     let body = `<article class="rounded-border ${noTitle ? ' noTitle' : ''}">`
@@ -51,6 +53,7 @@ module.exports = class Home {
       body += header
 
     body += section
+    body += footer
 
     if (noTitle)
       body += '</a>'
@@ -65,7 +68,8 @@ module.exports = class Home {
         //                     to copy an array
     let posts = data.collections.tepiton.slice().reverse()
 
-    let head = `<h1 class="logo">${ data.pkg.name }</h1>\n`
+    let head = ``
+    let notice = ''
     let prolog = `<div class="tepiton stack">\n`
     let epilog = '</div>'
     let body = ''
@@ -73,7 +77,7 @@ module.exports = class Home {
         body += await this.renderPost(post)
     }
 
-    return head + prolog + body + epilog
+    return head + notice + prolog + body + epilog
   }
 }
 
