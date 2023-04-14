@@ -88,7 +88,7 @@ html {
     /* https://css-tricks.com/simplified-fluid-typography/ */
     font-size: clamp(12px, .4rem + 1vw, 24px);
   }
-  
+
 
 pre {
   overflow: scroll;
@@ -97,7 +97,7 @@ pre {
 
 @font-face {
   font-family: "BerkeleyMono";
-  src: 
+  src:
   url('../fonts/BerkeleyMono-Regular.woff2')    format('woff2'),
   url('../fonts/BerkeleyMono-Italic.woff2')     format('woff2'),
   url('../fonts/BerkeleyMono-Bold.woff2')       format('woff2'),
@@ -357,6 +357,7 @@ div.qembed cite {
 .tepiton article footer {
   border: initial;
   margin-top: 0px !important;
+  display: none;
 }
 
 .tepiton h1, h1,
@@ -438,8 +439,8 @@ h4 {
 
 h2, h3 {
      margin-block-start: 1em !important;
-} 
- 
+}
+
 
 
 h2 + p,
@@ -528,7 +529,7 @@ details > summary::-webkit-details-marker {
 
 figure  { margin: 0; }
 img     { max-width: 100%;
-          height: auto; 
+          height: auto;
           margin-top: 0 !important;}
 iframe  { max-width: 100%;}
 
@@ -564,7 +565,7 @@ sup {
 sub {
     vertical-align: baseline;
     font-feature-settings: "subs";
-} 
+}
 ****/
 
 
@@ -696,7 +697,7 @@ table thead {
   border-bottom: 1px solid var(--color-border);
 }
 
-td, th { 
+td, th {
   vertical-align: top;
   padding: 0.25em 0.375em ;
 }
@@ -704,7 +705,7 @@ td, th {
 tr {
 }
 
-table tbody tr { 
+table tbody tr {
   background-color: var(--color-table-background);
 }
 
@@ -750,4 +751,3 @@ table tbody tr:nth-child(even) {
       height: 0;
     }
   }
-  
