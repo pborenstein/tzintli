@@ -1,31 +1,42 @@
 {
-  "name": "tepiton",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "clean": "rm -rf ./dist",
-    "build": "npm run clean && eleventy --quiet",
-    "serve": "npm run clean && eleventy --serve --quiet",
-    "debug": "DEBUG=* npx eleventy"
-  },
-  "keywords": [],
-  "repository": "https://github.com/tepiton/tepiton.git",
-  "author": "Philip Borenstein",
-  "license": "MIT",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-cache-assets": "^2.3.0",
-    "@11ty/eleventy-img": "^3.0.0",
-    "@11ty/eleventy-navigation": "^0.3.5",
-    "@pborenstein/eleventy-md-syntax-highlight": "^1.1.0",
-    "async-git": "^1.13.3",
-    "json-cycle": "^1.3.0",
-    "markdown-it": "^13.0.1",
-    "markdown-it-container": "^3.0.0",
-    "markdown-it-footnote": "^3.0.3",
-    "netlify-plugin-cache": "^1.0.3",
-    "oembed-parser": "^3.1.6-rc1",
-    "slugify": "^1.6.1"
-  }
+    "name": "tepiton",
+    "version": "1.0.0",
+    "description": "something small",
+    "siteData": {
+        "title": "tepiton.com",
+        "description": "something small",
+        "url": "https://tepiton.com/"
+    },
+    "repository": "https://github.com/tepiton/tepiton.git",
+    "author": {
+        "name": "Philip Borenstein",
+        "email": "pborenstein@gmail.com",
+        "url": "https://pborenstein.com",
+        "twitter": "pborenstein",
+        "github": "pborenstein",
+        "mastodon": "pborenstein",
+        "mastodon_url": "https://mastodon.social/@pborenstein"
+    },
+    "scripts": {
+        "clean": "rm -rf ./dist",
+        "build": "npm run clean && eleventy",
+        "serve": "npm run clean && eleventy --serve --quiet",
+        "debug": "DEBUG=* npx eleventy"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@11ty/eleventy": "^2.0.0",
+        "@11ty/eleventy-cache-assets": "^2.3.0",
+        "@11ty/eleventy-img": "^3.0.0",
+        "@11ty/eleventy-navigation": "^0.3.5",
+        "@pborenstein/eleventy-md-syntax-highlight": "^1.1.0",
+        "async-git": "^1.13.3",
+        "json-cycle": "^1.3.0",
+        "markdown-it": "^13.0.1",
+        "markdown-it-container": "^3.0.0",
+        "markdown-it-footnote": "^3.0.3",
+        "netlify-plugin-cache": "^1.0.3",
+        "oembed-parser": "^3.1.4",
+        "slugify": "^1.6.1"
+    }
 }
